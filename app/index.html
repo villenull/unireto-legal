@@ -1,0 +1,18 @@
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Abriendo UniReto en Google Play…</title>
+<meta http-equiv="refresh" content="0;url=https://play.google.com/store/apps/details?id=mx.unireto.app">
+</head><body>
+<p>Abriendo Google Play… Si no pasa nada, toca <a id="l" href="https://play.google.com/store/apps/details?id=mx.unireto.app">aquí</a>.</p>
+<script>
+(function () {
+  var play = "https://play.google.com/store/apps/details?id=mx.unireto.app";
+  var r = new URLSearchParams(location.search).get("r");
+  var url = r ? play + "&referrer=" + encodeURIComponent("utm_source=" + r) : play;
+  var link = document.getElementById("l");
+  if (link) link.href = url;
+  location.replace(url);
+})();
+</script>
+</body></html>

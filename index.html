@@ -1,7 +1,108 @@
 <!doctype html><html lang="es-MX"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Inicio · UniReto</title>
-<style>body{margin:0;background:#EEF5F5;color:#0B1F4B;font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 20px 48px;background:#fff;min-height:100vh}
-h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:1.8em}a{color:#007E82}nav a{margin-right:16px}</style>
-</head><body><main><nav><a href="index.html">UniReto</a><a href="privacidad.html">Aviso de Privacidad</a><a href="terminos.html">Términos y Condiciones</a></nav>
-<h1>UniReto</h1><p>Tu meta universitaria, paso a paso. App de estudio para el examen de admisión a licenciatura en México.</p><ul><li><a href="privacidad.html">Aviso de Privacidad</a></li><li><a href="terminos.html">Términos y Condiciones</a></li></ul><p>Contacto: <a href="mailto:diegohuyke@gmail.com">diegohuyke@gmail.com</a></p></main></body></html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UniReto: examen de admisión</title>
+<meta name="description" content="Examen de admisión a la universidad: +5,000 preguntas, lecciones y plan diario">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UniReto: examen de admisión">
+<meta property="og:description" content="Examen de admisión a la universidad: +5,000 preguntas, lecciones y plan diario">
+<meta property="og:image" content="https://villenull.github.io/unireto-legal/feature-graphic-1024x500.png">
+<meta property="og:url" content="https://villenull.github.io/unireto-legal/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="icon-512.png">
+<style>
+:root{--bg:#EEF5F5;--surface:#FFFFFF;--text:#0B1F4B;--text2:#52617A;--border:#C6D1DD;--primary:#00C2C7;--positive:#00777C;--reward:#F6A21A}
+@media (prefers-color-scheme:dark){:root{--bg:#0B1528;--surface:#122440;--text:#F4F6FA;--text2:#B8C6D8;--border:#476485;--primary:#00C2C7;--positive:#5DE0DF;--reward:#F6A21A}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:880px;margin:0 auto;padding:0 20px 56px}
+nav{max-width:880px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+nav .brand{font-weight:700;font-size:1.1rem;color:var(--text);text-decoration:none}
+nav .links a{color:var(--positive);text-decoration:none;margin-left:16px;font-size:.9rem}
+.hero{text-align:center;padding:24px 0 36px}
+.hero img.icon{width:96px;height:96px;border-radius:24px;display:block;margin:0 auto 16px}
+h1{font-size:1.7rem;margin:0 0 8px;line-height:1.2}
+.tagline{color:var(--text2);font-size:1.05rem;max-width:560px;margin:0 auto 24px}
+.cta{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#04202b;font-weight:700;
+text-decoration:none;padding:14px 28px;border-radius:14px;font-size:1rem}
+.cta:focus-visible,a:focus-visible{outline:3px solid var(--primary);outline-offset:2px}
+section{margin:40px 0}
+h2{font-size:1.3rem;margin:0 0 16px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.feature{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:20px}
+.feature h3{font-size:1.05rem;margin:0 0 8px}
+.feature p{color:var(--text2);margin:0;font-size:.95rem}
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 0;scrollbar-width:thin}
+.shots img{height:360px;max-width:80vw;border-radius:16px;border:1px solid var(--border);flex:0 0 auto}
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.plan{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:24px}
+.plan h3{margin:0 0 4px;font-size:1.1rem}
+.plan .price{color:var(--positive);font-weight:700;font-size:1.3rem;margin:4px 0 12px}
+.plan p{color:var(--text2);margin:0;font-size:.95rem}
+.privacy{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:20px;
+text-align:center;color:var(--text2);font-size:.95rem}
+.privacy strong{color:var(--text)}
+footer{max-width:880px;margin:0 auto;padding:24px 20px 40px;color:var(--text2);font-size:.85rem;
+border-top:1px solid var(--border);text-align:center}
+footer a{color:var(--positive);text-decoration:none}
+footer .disclaimer{margin-top:12px;max-width:640px;margin-left:auto;margin-right:auto}
+@media (max-width:360px){.hero img.icon{width:80px;height:80px}h1{font-size:1.4rem}.cta{padding:12px 20px;font-size:.95rem}}
+</style>
+</head><body>
+<nav><a class="brand" href="index.html">UniReto</a>
+<span class="links"><a href="terminos.html">Términos</a><a href="privacidad.html">Aviso de Privacidad</a></span></nav>
+<main>
+<section class="hero">
+<img class="icon" src="icon-512.png" alt="Ícono de UniReto">
+<h1>UniReto: examen de admisión</h1>
+<p class="tagline">Examen de admisión a la universidad: +5,000 preguntas, lecciones y plan diario</p>
+<a class="cta" href="https://play.google.com/store/apps/details?id=mx.unireto.app" rel="noopener">Disponible en Google Play</a>
+</section>
+
+<section aria-labelledby="features-h">
+<h2 id="features-h">Qué incluye</h2>
+<div class="features">
+<div class="feature"><h3>Practica exactamente lo que te van a evaluar</h3>
+<p>Pensamiento matemático, comprensión lectora, redacción indirecta, inglés y los módulos específicos de tu carrera, con preguntas de 3 opciones como en el examen real.</p></div>
+<div class="feature"><h3>Más de 5,000 preguntas originales</h3>
+<p>Cada pregunta trae explicación y la razón de cada error, para que entiendas por qué.</p></div>
+<div class="feature"><h3>Tu plan según tu universidad y tu carrera</h3>
+<p>Elige hasta 3 universidades y 2 carreras. UniReto arma tus módulos y reparte tu práctica según tu nivel y los días que faltan.</p></div>
+<div class="feature"><h3>Estudia 5, 10 o 15 minutos al día</h3>
+<p>Un reto diario con Reti, tu ajolote guía, rachas, misiones diarias y un camino por materia con lecciones, práctica y pruebas de unidad.</p></div>
+<div class="feature"><h3>Gimnasio</h3>
+<p>Simulacros cronometrados, Contrarreloj y Repaso inteligente para llegar listo a tu examen.</p></div>
+</div>
+</section>
+
+<section aria-labelledby="shots-h">
+<h2 id="shots-h">La app</h2>
+<div class="shots">
+<img src="screenshot-1.png" alt="Captura de pantalla 1 de la app UniReto" loading="lazy" width="203" height="360">
+<img src="screenshot-2.png" alt="Captura de pantalla 2 de la app UniReto" loading="lazy" width="203" height="360">
+<img src="screenshot-3.png" alt="Captura de pantalla 3 de la app UniReto" loading="lazy" width="203" height="360">
+<img src="screenshot-4.png" alt="Captura de pantalla 4 de la app UniReto" loading="lazy" width="203" height="360">
+</div>
+</section>
+
+<section aria-labelledby="pricing-h">
+<h2 id="pricing-h">Planes</h2>
+<div class="pricing">
+<div class="plan"><h3>Básico</h3><p class="price">Gratis</p>
+<p>Áreas generales, diagnóstico, reto diario y una lección por área, más tu primer simulacro completo (todas las secciones, incluyendo inglés y tus módulos).</p></div>
+<div class="plan"><h3>Premium</h3><p class="price">99 MXN al mes · 30 días gratis</p>
+<p>Inglés y todos tus módulos, todas las lecciones, simulacros completos sin límite, preparación por universidad y carrera, Repaso inteligente, Contrarreloj y un plan día por día. Cancela cuando quieras en Google Play.</p></div>
+</div>
+</section>
+
+<section aria-labelledby="privacy-h">
+<h2 id="privacy-h" class="sr-only" style="position:absolute;left:-9999px">Privacidad</h2>
+<p class="privacy"><strong>No te pedimos nombre ni correo; tu avance se queda en tu teléfono.</strong><br>
+UniReto funciona sin internet y no usa cookies ni anuncios. La única excepción: si reportas una pregunta, ese reporte se envía automáticamente para que lo revisemos.</p>
+</section>
+</main>
+<footer>
+<p>Contacto: <a href="mailto:diegohuyke@gmail.com">diegohuyke@gmail.com</a> ·
+<a href="terminos.html">Términos y Condiciones</a> · <a href="privacidad.html">Aviso de Privacidad</a></p>
+<p class="disclaimer">UniReto no está afiliada, patrocinada ni avalada por ninguna universidad ni institución evaluadora. Las marcas mencionadas pertenecen a sus titulares.</p>
+</footer>
+</body></html>
